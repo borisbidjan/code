@@ -5,15 +5,14 @@
 ## Задание
 
 Источник: [content/DevOps/CI_CD/Pipelines/hello.md](https://gitflic.ru/project/rurewa/mfua/blob?file=content/DevOps/CI_CD/Pipelines/hello.md&branch=master)
-Отдельный репозиторий: [bobojonanaev2-code/my-first-cicd](https://github.com/bobojonanaev2-code/my-first-cicd)
+Репозиторий: [borisbidjan/my-first-cicd](https://github.com/borisbidjan/my-first-cicd)
 
 ## Что сделано
 
 - Создан публичный репозиторий `my-first-cicd` на GitHub
-- Склонирован в WSL
+- Исходный проект перенесён в отдельный репозиторий
 - Создана структура `.github/workflows/hello.yml`
 - Workflow запускается при каждом push
-- Проверено выполнение: зелёная галочка в разделе Actions
 
 ## Структура проекта
 
@@ -42,7 +41,7 @@ jobs:
 ## Команды
 
 ```bash
-git clone git@github.com:bobojonanaev2-code/my-first-cicd.git
+git clone https://github.com/borisbidjan/my-first-cicd.git
 cd my-first-cicd
 mkdir -p .github/workflows
 touch .github/workflows/hello.yml
@@ -53,25 +52,6 @@ git push origin main
 
 ## Результат
 
-- Actions: https://github.com/bobojonanaev2-code/my-first-cicd/actions
-- Статус: ✅ все шаги прошли успешно
+- [GitHub Actions](https://github.com/borisbidjan/my-first-cicd/actions)
 
-## Скриншоты
-
-### 1. Push в репозиторий
-![git push](screenshots/01-push.png)
-
-### 2. Список workflow в Actions
-![Actions](screenshots/02-actions-list.png)
-
-### 3. Детали запуска
-![Детали запуска](screenshots/03-run-details.png)
-
-### 4. Шаги выполнения
-![Шаги](screenshots/04-run-steps.png)
-
-### 5. Вывод команды
-![Вывод echo](screenshots/05-echo-output.png)
-
-### 6. Репозиторий на GitHub
-![Репозиторий](screenshots/06-repo.png)
+- Код и workflow перенесены; результат запуска CI см. в Actions.
